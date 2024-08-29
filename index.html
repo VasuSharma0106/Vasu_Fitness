@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasu Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Ubuntu:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img src="gym_logo.jpeg" alt="">
+            Vasu's Fitness
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Trainers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="button">Login</button>OR
+            <button class="button">Sign Up</button>
+        </div>
+    </header>
+
+    <section>
+        <h2>Transform Your Body. Transform Your Life.</h2>
+    </section>
+
+    <div class="container">
+        <h2>Join the best gym of Delhi now!!</h2>
+        <form id="myForm">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="address" placeholder="Enter your address">
+            </div>
+            <div class="form-group">
+                <select name="exercise_type" id="dropdown">
+                    <option value="">Select Exercise Type</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="weight_training">Weight Training</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="crossfit">CrossFit</option>
+                    <option value="pilates">Pilates</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" name="fees" placeholder="Enter gym fees">
+            </div>
+            <button type="button" class="btn" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2021 Vasu Fitness. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            // Handle form submission here
+            console.log('Form submitted');
+        }
+    </script>
+
+</body>
+
+</html>
